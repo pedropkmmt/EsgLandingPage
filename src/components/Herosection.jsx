@@ -46,11 +46,10 @@ function LedgerRow({ code, name, unit, value, evidence, done, animated }) {
 
 function LedgerVignette() {
   const r = 8.5;
-  const circumference = 2 * Math.PI * r; // ≈ 53.4
+  const circumference = 2 * Math.PI * r; //53.4
 
   return (
     <div className="relative">
-      {/* backdrop card offset — a second sheet in the ledger */}
       <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl bg-[#0B3F37]/10" aria-hidden="true" />
       <div className="relative bg-white border border-slate-200 rounded-2xl shadow-xl shadow-[#002B28]/10 overflow-hidden">
         <div className="flex items-center justify-between px-4 py-3 border-b border-slate-100 bg-slate-50/60">
@@ -121,7 +120,7 @@ export default function Herosection() {
       <div className="relative max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] items-center gap-12 lg:gap-16 px-5 sm:px-8 pt-16 pb-20 sm:pt-24 sm:pb-28">
         <div>
           <p className="font-['IBM_Plex_Mono',monospace] text-xs font-medium text-[#0B3F37] bg-[#E9F1EC] border border-emerald-900/10 rounded-full inline-flex px-3 py-1 mb-6">
-            E · S · G — one evidenced ledger
+            E · S · G
           </p>
           <h1 className="font-['Space_Grotesk',sans-serif] font-bold text-[#002B28] text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.06] tracking-tight">
             ESG reporting that stands up to audit.

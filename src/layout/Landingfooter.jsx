@@ -12,7 +12,7 @@ const COLUMNS = [
   {
     heading: "Company",
     links: [
-      { href: "#", label: "About WYT" },
+      { href: "https://www.bespokesolutech.co.za/", label: "About Bespoke Solutech" },
       { href: "#demo", label: "Contact" },
     ],
   },
@@ -61,7 +61,7 @@ export default function Landingfooter() {
       </div>
       <div className="border-t border-[#E9F1EC]">
         <p className="max-w-6xl mx-auto px-5 sm:px-8 py-5 text-xs text-slate-400">
-          © {new Date().getFullYear()} WYT Business Solutions. All rights reserved.
+          © {new Date().getFullYear()} Bespoke Solutech. All rights reserved.
         </p>
       </div>
     </footer>

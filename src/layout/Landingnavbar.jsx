@@ -36,12 +36,6 @@ export default function Landingnavbar() {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/login"
-            className="text-sm font-medium text-slate-600 hover:text-[#002B28] px-3 py-2 transition-colors"
-          >
-            Sign in
-          </a>
-          <a
             href="#demo"
             className="text-sm font-semibold text-white bg-[#002B28] hover:bg-[#0B3F37] rounded-lg px-4 py-2 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
           >
