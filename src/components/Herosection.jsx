@@ -126,8 +126,8 @@ export default function Herosection() {
             ESG reporting that stands up to audit.
           </h1>
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
-            Capture 100+ coded metrics across Environmental, Social and Governance — with the source
-            document attached at the point of entry. Export audit-ready workbooks aligned to IFRS S1/S2,
+            Capture 100+ coded metrics across Environmental, Social, Governance and Other, with the source
+            document attached at the point of entry. Export audit-ready documents aligned to IFRS S1/S2,
             GRI and King&nbsp;IV.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
