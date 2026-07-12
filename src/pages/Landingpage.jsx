@@ -1,16 +1,15 @@
-import Landingnavbar from "./Landingnavbar";
-import Herosection from "./Herosection";
-import Standardsstrip from "./Standardsstrip";
-import Featuresection from "./Featuresection";
-import Howitworks from "./Howitworks";
-import Pillarssection from "./Pillarssection";
-import Ctasection from "./Ctasection";
-import Landingfooter from "./Landingfooter";
+import Landingnavbar from "../layout/Landingnavbar";
+import Herosection from "../components/Herosection";
+import Standardsstrip from "../components/Standardsstrip";
+import Featuresection from "../components/Featuresection";
+import Howitworks from "../components/Howitworks";
+import Pillarssection from "../components/Pillarssection";
+import Ctasection from "../components/Ctasection";
+import Landingfooter from "../layout/Landingfooter";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[#FAFAF8] text-slate-800 font-['IBM_Plex_Sans',sans-serif] antialiased">
-      {/* Keyframes for the hero ledger's validation loop */}
       <style>{`
         @keyframes ledger-rail {
           0%, 20%  { background-color: #FCA5A5; }

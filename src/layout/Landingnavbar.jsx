@@ -18,7 +18,7 @@ export default function Landingnavbar() {
             <Leaf className="w-4 h-4 text-emerald-300" strokeWidth={2.5} />
           </span>
           <span className="font-['Space_Grotesk',sans-serif] font-700 font-bold text-[#002B28] tracking-tight">
-            WYT&nbsp;ESG
+            ESG
           </span>
         </a>
 
