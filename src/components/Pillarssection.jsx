@@ -46,7 +46,7 @@ export default function Pillarssection() {
           A coded catalogue, ready on day one.
         </h2>
         <p className="mt-4 text-slate-600 leading-relaxed">
-          Every metric ships with a code, unit, reporting level and the evidence it requires — and
+          Every metric ships with a code, unit, reporting level and the evidence it requires and
           you can extend any section with custom fields.
         </p>
       </div>

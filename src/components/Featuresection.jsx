@@ -4,7 +4,7 @@ const FEATURES = [
   {
     icon: Paperclip,
     title: "Evidence at the point of entry",
-    body: "Each metric names the document that proves it — fuel invoices, HR registers, board minutes. Attach it where you type the number, and the row won't validate without it.",
+    body: "Each metric names the document that proves it fuel invoices, HR registers, board minutes. Attach it where you type the number, and the row won't validate without it.",
   },
   {
     icon: GaugeCircle,
@@ -14,12 +14,12 @@ const FEATURES = [
   {
     icon: CalendarRange,
     title: "Year-versioned records",
-    body: "Data is stored per company, per reporting year. Prior years lock automatically as read-only — reviewable and exportable, but never silently edited.",
+    body: "Data is stored per company, per reporting year. Prior years lock automatically as read-only reviewable and exportable, but never silently edited.",
   },
   {
     icon: FileSpreadsheet,
     title: "Audit-ready exports",
-    body: "One click produces XLSX, CSV or PDF with metric codes, values, evidence status and data owner — filed as Company_Year_Scope_Date, the way your auditors expect it.",
+    body: "One click produces XLSX, CSV or PDF with metric codes, values, evidence status and data owner filed as Company_Year_Scope_Date, the way your auditors expect it.",
   },
 ];
 

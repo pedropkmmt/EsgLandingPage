@@ -11,7 +11,7 @@ const STEPS = [
     n: "02",
     icon: ClipboardCheck,
     title: "Capture with evidence",
-    body: "Preparers work through coded metrics topic by topic — typed inputs, inline validation, and the source document attached to every required value.",
+    body: "Preparers work through coded metrics topic by topic typed inputs, inline validation, and the source document attached to every required value.",
   },
   {
     n: "03",

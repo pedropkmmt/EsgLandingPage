@@ -12,7 +12,7 @@ export default function Ctasection() {
           Your next ESG report, evidenced end to end.
         </h2>
         <p className="mt-4 text-emerald-50/70 max-w-xl mx-auto leading-relaxed">
-          See the platform on your own metric list — we'll walk through capture, completeness and
+          See the platform on your own metric list we'll walk through capture, completeness and
           export with your reporting team in 30 minutes.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">

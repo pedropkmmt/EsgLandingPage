@@ -59,10 +59,20 @@ export default function Landingfooter() {
           </nav>
         ))}
       </div>
-      <div className="border-t border-[#E9F1EC]">
-        <p className="max-w-6xl mx-auto px-5 sm:px-8 py-5 text-xs text-slate-400">
-          © {new Date().getFullYear()} Bespoke Solutech. All rights reserved.
-        </p>
+      <div className="flex border-t border-[#E9F1EC]">
+        <div className="flex items-center justify-between w-full max-w-6xl mx-auto px-5 sm:px-8 py-5">
+          <p className="text-sm text-slate-400">
+            © {new Date().getFullYear()} Bespoke Solutech. All rights reserved.
+          </p>
+          <a href="https://www.bespokesolutech.co.za/">
+          <img
+            src="/logo.png"
+            alt="Bespoke Solutech logo"
+            width={60}
+            className="h-auto"
+          />
+          </a>
+        </div>
       </div>
     </footer>
   );
