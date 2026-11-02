@@ -5,33 +5,33 @@ const PILLARS = [
     code: "E",
     icon: Flame,
     name: "Environmental",
-    count: "38 metrics",
-    topics: "Climate & GHG · Energy · Water · Waste · Air emissions · Biodiversity & land",
-    examples: ["E005 Scope 1 GHG", "E011 Water withdrawn", "E027 Environmental penalties"],
+    count: "34 metrics",
+    topics: "Climate & GHG · Energy · Water · Waste · Biodiversity, land & rehabilitation",
+    examples: ["Scope 1 GHG emissions", "Water withdrawn", "Environmental incidents"],
   },
   {
     code: "S",
     icon: Users,
     name: "Social",
-    count: "45 metrics",
-    topics: "Workforce · Employment equity · Skills · Health & safety · Communities",
-    examples: ["S010 Fatalities", "S008 Training hours", "S021 Black-owned supplier spend"],
+    count: "39 metrics",
+    topics: "Workforce · Employment equity & transformation · Skills & training · Health & safety · Communities",
+    examples: ["Fatalities", "B-BBEE level", "Spend on black-owned suppliers"],
   },
   {
     code: "G",
     icon: Landmark,
     name: "Governance",
-    count: "40 metrics",
-    topics: "Board · Ethics & anti-corruption · Strategy, risk & assurance · Compliance",
-    examples: ["G004 Board independence", "G010 Whistleblowing reports", "G018 Assurance level"],
+    count: "33 metrics",
+    topics: "Board composition & oversight · Ethics & anti-corruption · Compliance · Procurement governance",
+    examples: ["Independent non-executive directors", "Whistleblowing reports received", "Procurement deviations approved"],
   },
   {
-    code: "M/F",
+    code: "O",
     icon: Layers,
-    name: "Cross-cutting",
-    count: "12 metrics",
-    topics: "Sites & maintenance · Financial denominators — plus your own custom fields",
-    examples: ["M003 Downtime ratio", "F001 Total revenue", "F003 Carbon tax liability"],
+    name: "Other",
+    count: "Custom fields",
+    topics: "Anything outside E, S and G. Admins add their own fields as text, number, date or yes/no, and mark each as required or optional.",
+    examples: ["Informational", "Reporting-relevant"],
   },
 ];
 
@@ -43,11 +43,12 @@ export default function Pillarssection() {
           THE METRIC LIBRARY
         </p>
         <h2 className="font-['Space_Grotesk',sans-serif] font-bold text-[#002B28] text-3xl sm:text-4xl tracking-tight">
-          A coded catalogue, ready on day one.
+          A structured catalogue, ready on day one.
         </h2>
         <p className="mt-4 text-slate-600 leading-relaxed">
-          Every metric ships with a code, unit, reporting level and the evidence it requires and
-          you can extend any section with custom fields.
+          Every metric ships with a unit, reporting level, mandatory status, the evidence it requires, a
+          data owner and a guidance note. The catalogue loads to match your frameworks and industry, and
+          admins can extend any section with custom fields.
         </p>
       </div>
 

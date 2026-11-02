@@ -1,25 +1,54 @@
-import { Paperclip, GaugeCircle, CalendarRange, FileSpreadsheet } from "lucide-react";
+import {
+  Paperclip,
+  GaugeCircle,
+  ListPlus,
+  CalendarRange,
+  History,
+  FileSpreadsheet,
+  Scale,
+  FileText,
+} from "lucide-react";
 
 const FEATURES = [
   {
     icon: Paperclip,
     title: "Evidence at the point of entry",
-    body: "Each metric names the document that proves it fuel invoices, HR registers, board minutes. Attach it where you type the number, and the row won't validate without it.",
+    body: "Each metric names the evidence it expects — fuel invoices, HR reports, board packs, B-BBEE certificates. Attach the document where you enter the number, so every value can be traced to its source.",
   },
   {
     icon: GaugeCircle,
     title: "Completeness you can see",
-    body: "Section rings and per-topic counters show exactly which required fields still block submission. A one-click jump takes preparers to the next outstanding item.",
+    body: "Every tab shows a live completeness indicator based on its mandatory fields. Unfilled required fields are highlighted, filled ones turn green, and nothing is auto-saved until you save.",
+  },
+  {
+    icon: ListPlus,
+    title: "Custom fields, under admin control",
+    body: "Admins add company-specific fields to any section as text, number, date or yes/no, classed as informational or reporting-relevant. They never override the standard metrics.",
   },
   {
     icon: CalendarRange,
     title: "Year-versioned records",
-    body: "Data is stored per company, per reporting year. Prior years lock automatically as read-only reviewable and exportable, but never silently edited.",
+    body: "Data is stored per company and reporting year. Prior years open read-only by default, stay exportable, and can only be unlocked by users with override permission.",
+  },
+  {
+    icon: History,
+    title: "An audit trail on every change",
+    body: "Every create, update and delete is logged with the user, timestamp and previous value. Audit records can't be edited or deleted by end users, and history is viewable per metric.",
   },
   {
     icon: FileSpreadsheet,
-    title: "Audit-ready exports",
-    body: "One click produces XLSX, CSV or PDF with metric codes, values, evidence status and data owner filed as Company_Year_Scope_Date, the way your auditors expect it.",
+    title: "Flexible, audit-ready exports",
+    body: "Export a blank template, the full dataset or a single section as XLSX, CSV or PDF, with metric names, values, units, evidence status and data owner, filed as Company_Year_Scope_Date.",
+  },
+  {
+    icon: Scale,
+    title: "Governed materiality",
+    body: "Your selected frameworks decide whether Financial or Double Materiality applies. Assess topics with a risk level and written justification, then send them to a reviewer for approval.",
+  },
+  {
+    icon: FileText,
+    title: "Tagged, reviewable reports",
+    body: "Draft the report in a word-processor-style editor and tag text to your approved material topics. High Risk topics must be disclosed before review, and every version is kept.",
   },
 ];
 
@@ -35,7 +64,7 @@ export default function Featuresection() {
         </h2>
         <p className="mt-4 text-slate-600 leading-relaxed">
           Sustainability data fails audits for two reasons: missing evidence and untraceable numbers.
-          The platform is designed so neither can happen.
+          The platform is designed to catch both before anything is submitted.
         </p>
       </div>
 

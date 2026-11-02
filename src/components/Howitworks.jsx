@@ -1,23 +1,29 @@
-import { Building2, ClipboardCheck, Send } from "lucide-react";
+import { Building2, ClipboardCheck, Scale, FileText } from "lucide-react";
 
 const STEPS = [
   {
     n: "01",
     icon: Building2,
     title: "Set up the company",
-    body: "Register the entity, pick its reporting standards and industry, and set the financial year. The metric schema loads to match.",
+    body: "Register the entity, choose its industry and reporting frameworks, define the reporting boundary and financial year, and add sites, each marked as included in or excluded from ESG reporting.",
   },
   {
     n: "02",
     icon: ClipboardCheck,
     title: "Capture with evidence",
-    body: "Preparers work through coded metrics topic by topic typed inputs, inline validation, and the source document attached to every required value.",
+    body: "The metric catalogue loads to match your setup across the E, S, G and Other tabs. Enter values with units and guidance, attach the source document, save, and submit when ready.",
   },
   {
     n: "03",
-    icon: Send,
-    title: "Submit and export",
-    body: "Submission unlocks only when every required field and its evidence are in. Export the full evidenced dataset for assurance or disclosure.",
+    icon: Scale,
+    title: "Assess materiality",
+    body: "Your frameworks set the basis, Financial or Double Materiality. Assess each topic with a risk level and justification, then submit for reviewer approval.",
+  },
+  {
+    n: "04",
+    icon: FileText,
+    title: "Draft and finalise the report",
+    body: "Write the report in-platform and tag text to approved topics. Every High Risk topic must be disclosed before review. Finalise, then export to PDF or DOCX.",
   },
 ];
 
@@ -30,11 +36,11 @@ export default function Howitworks() {
             HOW IT WORKS
           </p>
           <h2 className="font-['Space_Grotesk',sans-serif] font-bold text-white text-3xl sm:text-4xl tracking-tight">
-            From company setup to signed-off dataset.
+            From company setup to finalised report.
           </h2>
         </div>
 
-        <ol className="mt-12 grid md:grid-cols-3 gap-5 list-none">
+        <ol className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5 list-none">
           {STEPS.map(({ n, icon: Icon, title, body }) => (
             <li
               key={n}

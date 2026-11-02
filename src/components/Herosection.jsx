@@ -1,12 +1,12 @@
 import { ArrowRight, CheckCircle2, Paperclip, ShieldCheck } from "lucide-react";
 
 const STATIC_ROWS = [
-  { code: "E005", name: "Scope 1 GHG Emissions", unit: "tCO2e", value: "12 480", evidence: "GHG-workbook.xlsx", done: true },
-  { code: "S010", name: "Fatalities", unit: "count", value: "0", evidence: "Incident-register.pdf", done: true },
-  { code: "G004", name: "Independent Non-exec Directors", unit: "%", value: "58", evidence: "Board-register.pdf", done: true },
+  { topic: "Climate", name: "Scope 1 GHG emissions", unit: "tCO₂e", value: "12 480", evidence: "GHG-calc-workbook.xlsx", done: true },
+  { topic: "Water", name: "Water withdrawn", unit: "ML", value: "1 920", evidence: "Municipal-bills-FY26.pdf", done: true },
+  { topic: "Waste", name: "Total waste generated", unit: "tonnes", value: "3 410", evidence: "Waste-contractor-report.pdf", done: true },
 ];
 
-function LedgerRow({ code, name, unit, value, evidence, done, animated }) {
+function LedgerRow({ topic, name, unit, value, evidence, done, animated }) {
   return (
     <div className="relative grid grid-cols-[auto_1fr_auto] items-center gap-3 pl-4 pr-4 py-2.5 border-b border-slate-100 last:border-b-0">
       <span
@@ -16,7 +16,7 @@ function LedgerRow({ code, name, unit, value, evidence, done, animated }) {
         style={animated ? { animation: "ledger-rail 6s ease-in-out infinite" } : undefined}
       />
       <span className="font-['IBM_Plex_Mono',monospace] text-[10px] font-medium text-slate-400 bg-slate-100 border border-slate-200 rounded px-1 py-px">
-        {code}
+        {topic}
       </span>
       <span className="min-w-0">
         <span className="block text-[13px] font-semibold text-slate-800 truncate">{name}</span>
@@ -57,7 +57,7 @@ function LedgerVignette() {
             <p className="text-[13px] font-bold text-slate-900">Environmental Metrics</p>
             <p className="text-[10px] text-slate-400">FY 2026 · Kalahari Manganese (Pty) Ltd</p>
           </div>
-          <div className="flex items-center gap-1.5" title="Section completeness">
+          <div className="flex items-center gap-1.5" title="Section completeness (mandatory fields)">
             <svg width="22" height="22" viewBox="0 0 22 22" className="-rotate-90">
               <circle cx="11" cy="11" r={r} fill="none" strokeWidth="2.5" className="stroke-slate-100" />
               <circle
@@ -81,9 +81,9 @@ function LedgerVignette() {
 
         <LedgerRow {...STATIC_ROWS[0]} />
         <LedgerRow
-          code="E006"
-          name="Scope 2 GHG Emissions"
-          unit="tCO2e"
+          topic="Climate"
+          name="Scope 2 GHG emissions"
+          unit="tCO₂e"
           value="8 940"
           evidence="Eskom-invoices-Q1-Q4.pdf"
           animated
@@ -94,7 +94,7 @@ function LedgerVignette() {
         <div className="flex items-center gap-1.5 px-4 py-2.5 bg-[#E9F1EC]/50 border-t border-slate-100">
           <ShieldCheck className="w-3 h-3 text-[#0B3F37]" />
           <span className="text-[10px] font-medium text-[#0B3F37]">
-            Every value carries its source document
+            Evidence attached against each metric
           </span>
         </div>
       </div>
@@ -126,9 +126,9 @@ export default function Herosection() {
             ESG reporting that stands up to audit.
           </h1>
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
-            Capture 100+ coded metrics across Environmental, Social, Governance and Other, with the source
-            document attached at the point of entry. Export audit-ready documents aligned to IFRS S1/S2,
-            GRI and King&nbsp;IV.
+            Capture 100+ predefined metrics across Environmental, Social and Governance, plus your own
+            custom fields, with supporting evidence attached at the point of entry. Then assess
+            materiality and draft your ESG report on the same platform, with every change traced.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
             <a
@@ -146,7 +146,7 @@ export default function Herosection() {
             </a>
           </div>
           <p className="mt-5 text-xs text-slate-400">
-            Built for South African reporters — B-BBEE, carbon tax and Employment Equity metrics included.
+            Built for South African reporters — B-BBEE, Employment Equity and local procurement metrics included.
           </p>
         </div>
 
