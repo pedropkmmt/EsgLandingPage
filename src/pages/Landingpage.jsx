@@ -6,6 +6,11 @@ import Howitworks from "../components/Howitworks";
 import Pillarssection from "../components/Pillarssection";
 import Ctasection from "../components/Ctasection";
 import Landingfooter from "../layout/Landingfooter";
+import Setupsection from "../components/Setupsection";
+import Evidencesection from "../components/Evidencesection";
+import Materialitysection from "../components/Materialitysection";
+import Reportingsection from "../components/Reportingsection";
+import Rolessection from "../components/Rolessection";
 
 export default function LandingPage() {
   return (
@@ -42,6 +47,11 @@ export default function LandingPage() {
         <Standardsstrip />
         <Featuresection />
         <Howitworks />
+        <Setupsection/>
+        <Evidencesection/>
+        <Materialitysection/>
+        <Reportingsection/>
+        <Rolessection/>
         <Pillarssection />
         <Ctasection />
       </main>
